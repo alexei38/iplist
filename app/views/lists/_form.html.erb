@@ -1,0 +1,29 @@
+<%= form_for @list do |f| %>
+  <%= f.label :fio, "ФИО" %>
+  <%= f.text_field :fio %>
+
+  <%= f.label :otdel, "Отдел" %>
+  <%= f.text_field :otdel %>
+
+  <%= f.label :kabinet, "Кабинет" %>
+  <%= f.text_field :kabinet %>
+
+  <%= f.label :name_pk, "Имя ПК" %>
+  <%= f.text_field :name_pk %>
+
+  <%= f.label :ip, "ИП" %>
+  <%= f.text_field :ip %>
+
+  <%= f.label :mac, "MAC" %>
+  <%= f.text_field :mac %>
+
+  <%= f.label :os, "OS" %>
+  <%= f.text_field :os %>
+
+  <%= f.label :passport, "Паспорт" %>
+  <%= f.text_field :passport %>
+
+  <br />
+  <%= f.submit "Submit", :class => "btn btn-large btn-primary" %>
+<% end %>
+
